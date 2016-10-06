@@ -18,16 +18,16 @@ var mongoURI = config.MONGO_URI;
 var port = config.PORT;
 
 mongoose.set("debug", true);
-mongoose.connect(mongoURI, (err)=>{
+mongoose.connect(mongoURI, function(err){
   if(err){
     console.log(err);
   } else{
     console.log("mongoose is ready");
   }
 });
-mongoose.connection.once("open", ()=>{
+mongoose.connection.once("open", function(){
   console.log("Connected to MongoDB at", mongoURI);
-  app.listen(port, ()=>{
+  app.listen(port, function(){
     console.log("Listening on port " + port);
   });
 });
