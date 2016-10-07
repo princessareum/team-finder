@@ -5,12 +5,32 @@ var mongoose = require("mongoose");
 var passport = require("passport");
 
 
-var config = require("./serverConfig.js")
+var config = require("./serverConfig.js");
 
 var app = express();
 
 app.use(express.static(__dirname+'/TeamFinder'));
 app.use(bodyParser.json());
+
+var userCtrl = require("./backControllers/userCtrl");
+
+
+
+//end points
+
+//User
+app.post("/api/user", userCtrl.CreateUser);
+app.get("/api/user", userCtrl.GetUser);
+app.put("/api/user/:id", userCtrl.UpdateUser);
+app.delete("/api/user/:id", userCtrl.DeleteUser);
+
+
+
+
+
+
+
+
 
 
 //mongoose connection
