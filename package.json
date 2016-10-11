@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/princessareum/team-finder#readme",
   "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
+    "babel-plugin-transform-strict-mode": "^6.11.3",
+    "babel-register": "^6.16.3",
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
