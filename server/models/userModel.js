@@ -15,10 +15,6 @@ var userSchema = new mongoose.Schema({
     teamSport: {type: String},
     teamName: {type: String},
     numberOfTeamMembers: {type: Number},
-    teamMembers: [{
-      name: {type: String},
-      position: {type: String}
-    }],
     location: {type: String, required: true}
   }
 
