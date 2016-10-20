@@ -1,4 +1,4 @@
-angular.module('app').service('userService', function($http){
+angular.module('starter').service('userService', function($http){
 
 
   this.createUser = function(user){

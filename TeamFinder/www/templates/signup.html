@@ -1,0 +1,19 @@
+<ion-view view-title="Signup" name="signup">
+  <ion-content class="padding">
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="First Name" ng-model="signup.firstName">
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Last Name" ng-model="signup.lastName">
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Email" ng-model="signup.email">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="signup.password">
+          </label>
+      </div>
+      <button class="button button-block button-positive" ng-click="createUser(signup)">Signup</button>
+  </ion-content>
+</ion-view>
