@@ -14,7 +14,6 @@ angular.module('starter').controller('LoginCtrl', function($scope, userService, 
         });
       };
     });
-    $state.go('tab.profile')
   };
 
 });
