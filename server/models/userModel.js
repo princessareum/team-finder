@@ -12,9 +12,7 @@ var userSchema = new mongoose.Schema({
   profile: {
     description: {type: String},
     gender: {type: String},
-    teamSport: {type: String},
-    teamName: {type: String},
-    numberOfTeamMembers: {type: Number},
+    interests: {type: String},
     location: {type: String, required: true}
   }
 

@@ -1,9 +1,14 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
+    <ion-toggle  ng-model="settings.enableFriends" ng-hide="!user">
         Enable Friends
     </ion-toggle>
+    <div class="padding login" ng-hide="user">
+      <button ui-sref="login" class="button button-block button-positive">Login</button>
+      <h5>or</h5>
+      <button ui-sref="login" class="button button-block button-positive">Sign Up</button>
+    </div>
     </ion-list>
   </ion-content>
 </ion-view>
