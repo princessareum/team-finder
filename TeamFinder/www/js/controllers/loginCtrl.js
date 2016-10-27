@@ -1,4 +1,4 @@
-angular.module('starter').controller('LoginCtrl', function($scope, userService, $state){
+angular.module('starter').controller('LoginCtrl', function($scope, userService, $state, $ionicHistory){
 
   $scope.getUser = function(){
     userService.getUser().then(function(response){
